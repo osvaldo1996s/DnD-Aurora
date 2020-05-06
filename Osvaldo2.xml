@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Weapon, +1" type="Magic Item" source="DnD Beyond Official" id="ID_WOTC_DMG_MAGIC_ITEM_WEAPON_1">
+		<description>
+			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} +{{enhancement}}</set>
+		</setters>
+	</element>
+        <element name="Rapid Slash Blade" type="Magic Item" source="DnD Beyond Official" id="ID_WOTC_DMG_MAGIC_ITEM_RAPID_SLASH_BLADE">
+		<description>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.</p>
+			<p class="indent"><strong><em>Flash.</em></strong> If the sword is on your person, you can call on its flash (action required) to make an special and quick atack, make a Athletics check (DC of 18) if you pass, you deal 8d8 magic slashing damage to one objective or 6d6 to enemies 10 feet around you</p>
+			<p class="indent"><strong><em>Time Stop.</em></strong> The sword has 1d4-1 charges. While holding it, you can use an action to expend 1 charge and cast the <em>Time Stop</em> spell from it. This property can't be used again until a short rest. The sword loses this property if it has no charges.</p>
+		</description>
+		<setters>
+			<set name="keywords">any sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="charges">1d4-1</set>
+		</setters>
+	</element>
+        <element name="Sword of Answering" type="Magic Item" source="DnD Beyond Official" id="ID_WOTC_DMG_MAGIC_ITEM_SWORD_OF_ANSWERING">
+		<!-- todo: create 9 seperate weapons based on alignment ? -->
+		<description>
+			<p>In the world of Greyhawk, only nine of these blades are known to exist. Each is patterned after the legendary sword Fragarach, which is variously translated as "Final Word." Each of the nine swords has its own name and alignment, and each bears a different gem in its pommel.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made with this sword. In addition, while you hold the sword, you can use your reaction to make one melee attack with it against any creature in your reach that deals damage to you. You have advantage on the attack roll, and any damage dealt with this special attack ignores any damage immunity or resistance the target has.</p>
+			<table>
+				<thead>
+					<tr><td>Name</td><td>Alignment</td><td>Gem</td></tr>
+				</thead>
+				<tr><td>Answerer</td><td>Chaotic good</td><td>Emerald</td></tr>
+				<tr><td>Back Talker</td><td>Chaotic evil</td><td>Jet</td></tr>
+				<tr><td>Concluder</td><td>Lawful neutral</td><td>Amethyst</td></tr>
+				<tr><td>Last Quip</td><td>Chaotic neutral</td><td>Tourmaline</td></tr>
+				<tr><td>Rebutter</td><td>Neutral good</td><td>Topaz</td></tr>
+				<tr><td>Replier</td><td>Neutral</td><td>Peridot</td></tr>
+				<tr><td>Retorter</td><td>Lawful good</td><td>Aquamarine</td></tr>
+				<tr><td>Scather</td><td>Lawful evil</td><td>Garnet</td></tr>
+				<tr><td>Squelcher</td><td>Neutral evil</td><td>Spinel</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="attunement" addition="by a creature with the same alignment as the sword">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+        <element name="Vorpal Katana" type="Magic Item" source="DnD Beyond Official" id="ID_WOTC_DMG_MAGIC_ITEM_VORPAL_SWORD">
+		<description>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, the weapon ignores resistance to slashing damage.</p>
+			<p class="indent">When you attack a creature that has at least one head with this weapon and do a critical, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it is immune to slashing damage, doesn't have or need a head, has legendary actions, or the GM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 7d6 slashing damage from the hit.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="katana">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Katana</set>
+		</setters>
+	</element>
+        <element name="Katana of Wounds" type="Magic Item" source="DnD Beyond Official" id="ID_WOTC_DMG_MAGIC_ITEM_KATANA_OF_WOUNDS">
+		<description>
+			<p>+2 To atack rolls and damage. Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.</p>
+			<p class="indent">Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes 1d4 necrotic damage for each time you've wounded it, and it can then make a DC 17 Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 17 Wisdom (Medicine) check, ending the effect of such wounds on it on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">any sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Katana</set>
+			<set name="name-format">{{parent}} of Wounding</set>
+                        <set name="enhancement">2</set>
+		</setters>
+	</element>
+        
+        <!-- ammunition -->
+        <element name="Ammunition, +3" type="Magic Item" source="DnD Beyond Official" id="ID_WOTC_DMG_MAGIC_ITEM_AMMUNITION_3">
+		<description>
+			<p>You have a bonus to attack and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hits a target, the ammunition is no longer magical.</p>
+		</description>
+		<setters>
+			<set name="keywords">ammunition</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="any ammunition">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">3</set>
+		</setters>
+	</element>
+
+        <!-- feats -->
+        <element name="Crippling Critical" type="Feat" source="DnD Beyond Official" id="ID_PHB_FEAT_CRIPPLING_CRITICAL">
+		<description>
+			<p>Your critical success range increase by one (19-20 etc).</p>
+			<p class="indent">When you score a critical hit, you can give the target disadvantage on all saving throws for 1 minute. You can use this ability as many times as half your proficiency bonus rounded down.</p>
+		</description>
+		<sheet>
+			<description>Your critical success range increase by one (19-20 etc).
+			When you score a critical hit, you can give the target disadvantage on all saving throws for 1 minute. You can use this ability as many times as half your proficiency bonus rounded down.</description>
+		</sheet>
+	</element>
+        <element name="Elusive" type="Feat" source="DnD Beyond Official" id="ID_PHB_FEAT_ELUSIVE">
+		<description>
+			<p>You have learned how to dwell among the shadows without raising suspicions. You gain the following benefits:</p>
+			<p class="indent">You have advantage on any Dexterity (Stealth) check made to hide when you are in dim light or darkness, even if you are hiding from creatures with darkvision or similar senses.</p>
+                        <p class="indent">After you have taken the Hide action, you can move at your full speed without revealing your position.</p>
+                        <p class="indent">Whenever you roll initiative in an environment of dim light or darkness, you can simultaneously take the Hide action if there is an appropriate place to hide within 5 feet of you.</p>
+		</description>
+		<sheet>
+			<description>You have learned how to dwell among the shadows without raising suspicions. You gain the following benefits:
+			You have advantage on any Dexterity (Stealth) check made to hide when you are in dim light or darkness, even if you are hiding from creatures with darkvision or similar senses.
+                        After you have taken the Hide action, you can move at your full speed without revealing your position.
+                        Whenever you roll initiative in an environment of dim light or darkness, you can simultaneously take the Hide action if there is an appropriate place to hide within 5 feet of you.</description>
+		</sheet>
+	</element>
+        <element name="Full Counter" type="Feat" source="DnD Beyond Official" id="ID_PHB_FEAT_FULL_COUNTER">
+		<prerequisite>Dexterity 13 or higher</prerequisite>
+		<requirements>[dex:13]</requirements>
+		<description>
+			<p><i>Prerequisite: Dexterity 13 or higher</i></p>
+			<p>Increase your Dexterity or Strengh score by 1, to a maximum of 20.</p>
+                        <p>Reflect attacks aimed at you back at your enemy.</p>
+                        <p>When selecting this feat, pick either magical or melee attacks.</p>
+                        <p>Upon being hit by an attack of the type you chose, you can use your reaction to reduce the amount of damage done to you by half. After reducing the damage in this way, make an attack roll using the modifier used for the attack (using your own ability score, not the attacker's). On a hit, the original attacker takes the remaining damage. You regain the use of this ability after a short rest.</p>
+		</description>
+		<sheet>
+			<description>Upon being hit by an attack of the type you chose, you can use your reaction to reduce the amount of damage done to you by half. After reducing the damage in this way, make an attack roll using the modifier used for the attack (using your own ability score, not the attacker's). On a hit, the original attacker takes the remaining damage. You regain the use of this ability after a short rest.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Full Counter" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+		</rules>
+	</element>
+
+        <!-- mounts -->
+        <element name="Motorcycle" type="Item" source="DnD Beyond Official" id="ID_WOTC_PHB_ITEM_MOTORCYCLE">
+		<description>
+			<p><strong><em>Speed.</em></strong> 100 ft.<br/><strong><em>Carrying Capacity.</em></strong> 1000 lb.</p>
+                        <p>A Magic Motorcycle, for be used, the user most use(gonna lose) a spell slot or a magic scroll.</p>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Mount</set>
+		</setters>
+	</element> 
+
+        <!-- armors -->
+        <element name="Assasin's Coat" type="Magic Item" source="DnD Beyond Official" id="ID_WOTC_EGTW_MAGIC_ITEM_ARMOR_ASSASINS_COAT">
+		<description>
+			<p>You gain a +2 bonus to AC while wearing this armor and +10 to speed.</p>
+			<p class="indent">The coat has 4 charges. When you hit a creature with an attack and that creature doesn’t have all its hit points, you can expend 1 charge to deal an extra 1d12 necrotic damage to the target. The coat regains 1d4 expended charges daily at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">3000</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">Leather||Studded Leather</set>
+			<set name="name-format">Assasin's {{parent}} Coat, +{{enhancement}}</set>
+			<set name="enhancement">2</set>
+			<set name="charges">4</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
+                        <stat name="innate speed:misc" value="10" />
+                        <stat name="innate speed:climb:misc" value="10" />
+			<stat name="innate speed:fly:misc" value="10" />
+			<stat name="innate speed:swim:misc" value="10" />
+			<stat name="innate speed:burrow:misc" value="10" />
+		</rules>
+	</element>
+</elements>

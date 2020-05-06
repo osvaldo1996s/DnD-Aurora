@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+        <element name="Absorb Energy" type="Spell" source="DnD Beyond Official" id="ID_PHB_SPELL_ABSORB_ENERGY">
+    <supports>Sorcerer, Warlock, Wizard</supports>
+    <description>
+      <p>Reaction: The spell absorbs anything harmful thrown at you, and stores that energy into your weapon. You have resistance to all damage until the start of your next turn. Additionally, choose a damage type that you've absorbed. The first time you hit with a melee attack on your turn, your weapon deals an additional 2d10 damage of the chosen damage type, and the spell ends. If one of the triggering damage types was bludgeoning, piercing, or slashing damage, then you have resistance to bludgeoning, piercing, and slashing damage until the start of your next turn.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b>  When you cast this spell using a spell slot of 4th level or higher, the extra damage increases by 1d10 for each slot level above 3rd.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 reaction</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">5 feet</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Arcane Hellish Derision" type="Spell" source="DnD Beyond Official" id="ID_PHB_SPELL_ARCANE_HELLISH_DERISION">
+    <supports>Sorcerer , Warlock, Wizard</supports>
+    <description>
+      <p>Your mouth is not your own as you launch into a vicious tirade of unrepeatable insults and personal attacks in Infernal, laced with bursts of intense heat on any creatures within a 20-foot cone in a direction you choose. Each of those creatures take 2d8 fire damage and if they have an Intelligence of at least 3 and can hear you, they must make a Wisdom saving throw. Creatures that fail the save suffer an additional 4d6 psychic damage and are stunned until the end of your next turn. Creatures that succeed on the save take half as much damage and aren’t stunned.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the psychic damage increases by 1d6 for each slot level above 3rd. If you cast this spell using a spell slot of 7th level or higher, creatures that fail the save are instead paralyzed for one minute, creatures can repeat this saving throw at the end of each of their turns, ending the effect on a success.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Enchantment</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self (20 feet cone) feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1 coin of gold</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Aegis" type="Spell" source="DnD Beyond Official" id="ID_PHB_SPELL_AEGIS">
+    <supports>Sorcerer, Warlock, Wizard</supports>
+    <description>
+      <p>Reaction: When you or an ally witthin 10 feet are hit by an attack or spell that requires a save. A translucent barrier of magical force appears in the shape of a shield and protects you and your allies. Until the start of your next turn, including against the triggering attack, whenever you or an ally within 10 feet is required to take a save (such as a Dexterity save), you take no damage on a successful save and only half damage on a failed one.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> If you cast this as a 4th level spell, it becomes a Concentration spell with a duration of 1 minute.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 reaction</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">10 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Sleep Paralysis" type="Spell" source="DnD Beyond Official" id="ID_PHB_SPELL_SLEEP_PARALYSIS">
+    <supports>Sorcerer , Warlock, Wizard</supports>
+    <description>
+      <p>When casted on a sleeping target, the target must make a wisdom saving throw. Upon failure, if/when the target wakes up, they will be paralyzed for 1 minute. Upon a success, the target will be paralyzed for one round.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Enchantment</set>
+      <set name="time">1 bonus action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">1 coin of gold</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+</elements>
